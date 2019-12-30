@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 @Component("myAspect")
 @Aspect
 public class MyAspect {
-    @Pointcut("execution(* com.zhc.aopdemo..*.*(..))")
+    @Pointcut("execution(* com.zhc.aopdemo.Target.show(..))")
     public void myPoint(){}
 
 //    @Before("MyAspect.myPoint()")

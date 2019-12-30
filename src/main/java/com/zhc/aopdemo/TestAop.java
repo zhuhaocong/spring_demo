@@ -1,5 +1,6 @@
 package com.zhc.aopdemo;
 
+import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +13,7 @@ public class TestAop {
 
     @Autowired
     private TargetInterface target;
+
     @Test
     public void test(){
         Object show = target.show("参数");
